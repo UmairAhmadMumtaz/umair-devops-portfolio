@@ -65,56 +65,28 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
+      skillName: "Git",
+      fontAwesomeClassname: "fab fa-git-alt"
     },
     {
       skillName: "Github",
       fontAwesomeClassname: "fab fa-github"
     },
     {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
+      skillName: "Kali Linux",
+      fontAwesomeClassname: "fab fa-linux"
     },
     {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
+      skillName: "C#",
+      fontAwesomeClassname: "fab fa-code"
     },
     {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
+      skillName: "VS Code",
+      fontAwesomeClassname: "fab fa-laptop-code"
     },
     {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
+      skillName: "VMs",
+      fontAwesomeClassname: "fab fa-computer"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -129,11 +101,10 @@ const educationInfo = {
       schoolName: "University of York",
       logo: require("./assets/images/yorkLogo.png"),
       subHeader: "Bachelors of Science in Computer Science",
-      duration: "Pending",
+      duration: "September 2025 - July 2028",
       desc: "Pending...",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "University of choice."
       ]
     },
     {
@@ -142,7 +113,7 @@ const educationInfo = {
       subHeader: "High School",
       duration: "September 2018 - Current",
       desc: "Learnt fundamentals in computer science - Data structures and algorithms, Object-oriented Programming, Computer Hardware etc.",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      descBullets: ["Predicted ABB at A-Level", "A*A*AAAAA BB C at GCSE"]
     }
   ]
 };
@@ -373,7 +344,8 @@ const contactInfo = {
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
   number: "+123456790",
-  email_address: ""
+  email_address: "",
+  display: false
 };
 
 // Twitter Section

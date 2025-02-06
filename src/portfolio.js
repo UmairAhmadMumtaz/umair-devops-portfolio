@@ -78,15 +78,15 @@ https://fontawesome.com/icons?d=gallery */
     },
     {
       skillName: "C#",
-      fontAwesomeClassname: "fab fa-code"
+      fontAwesomeClassname: "fab fa-solid fa-code"
     },
     {
       skillName: "VS Code",
-      fontAwesomeClassname: "fab fa-laptop-code"
+      fontAwesomeClassname: "fab fa-solid fa-laptop-code"
     },
     {
       skillName: "VMs",
-      fontAwesomeClassname: "fab fa-computer"
+      fontAwesomeClassname: "fab fa-solid fa-computer"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -113,7 +113,7 @@ const educationInfo = {
       subHeader: "High School",
       duration: "September 2018 - Current",
       desc: "Learnt fundamentals in computer science - Data structures and algorithms, Object-oriented Programming, Computer Hardware etc.",
-      descBullets: ["Predicted ABB at A-Level", "A*A*AAAAA BB C at GCSE"]
+      descBullets: ["Predicted ABB at A-Level", "A*A*AAAAABBC at GCSE"]
     }
   ]
 };

@@ -49,12 +49,15 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "Passionate Student Developer Exploring C#, .NET, Web Development, and Kali Linux",
+  subTitle:
+    "Passionate Student Developer Exploring C#, .NET, Web Development, and Kali Linux",
   skills: [
     emoji(
       "⚡ Building robust applications with C# and .NET for both web and desktop environments"
     ),
-    emoji("⚡ Experimenting with Kali Linux for security testing and ethical hacking projects"),
+    emoji(
+      "⚡ Experimenting with Kali Linux for security testing and ethical hacking projects"
+    ),
     emoji(
       "⚡ Exploring full-stack web development, from front-end design to back-end architecture"
     )
@@ -103,9 +106,7 @@ const educationInfo = {
       subHeader: "Bachelors of Science in Computer Science",
       duration: "September 2025 - July 2028",
       desc: "Pending...",
-      descBullets: [
-        "University of choice."
-      ]
+      descBullets: ["University of choice."]
     },
     {
       schoolName: "Ramsey Grammar School",

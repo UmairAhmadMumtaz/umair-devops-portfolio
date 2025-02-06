@@ -23,7 +23,7 @@ const greeting = {
   username: "Thomas Woolley",
   title: "Hi all, I'm Tom",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "Hey there! I’m passionate student learning C#, software development, and cybersecurity. I love building secure, innovative solutions and exploring new ways to solve tech challenges. Feel free to explore my work!."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1boum6FRkY6tEp6NIvtIdyMQhjHATSlHA/view?usp=sharing", // Set to empty to hide the button
@@ -69,8 +69,8 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-html5"
     },
     {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
+      skillName: "Github",
+      fontAwesomeClassname: "fab fa-github"
     },
     {
       skillName: "sass",

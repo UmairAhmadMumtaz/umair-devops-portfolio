@@ -1,12 +1,11 @@
 @import "../../_globalColor";
 
-/*React-headroom*/
+/* React-headroom */
 .headroom-wrapper {
   max-height: 100px;
 }
 
-/* header */
-
+/* Header */
 .dark-menu {
   background-color: $darkBackground !important;
   color: $textColorDark;
@@ -24,7 +23,10 @@
   background-color: $lightBackground1;
   max-width: 100%;
   padding: 15px 20px;
-  margin: 0px auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; /* Stack logo and menu vertically */
+  align-items: center; /* Center items by default */
 }
 
 .header ul {
@@ -32,6 +34,9 @@
   padding: 0;
   list-style: none;
   overflow: hidden;
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping if needed */
+  justify-content: center; /* Center menu items */
 }
 
 .grey-color {
@@ -52,32 +57,30 @@
 
 .header .logo {
   display: block;
-  flex: none;
-  float: left;
   font-size: 1.5em;
   text-decoration: none;
-  margin-top: 10px;
+  margin-bottom: 10px; /* Space between logo and menu */
   line-height: normal;
+  text-align: center; /* Center the text within the logo */
 }
 
 .header .logo-name {
-  font-family: "Agustina Regular";
+  font-family: "Montserrat";
   font-weight: bold;
   font-variant-ligatures: no-common-ligatures;
   -webkit-font-variant-ligatures: no-common-ligatures;
   padding: 0 10px;
 }
 
-/* menu */
-
+/* Menu */
 .header .menu {
   clear: both;
   max-height: 0;
   transition: max-height 0.2s ease-out;
+  width: 100%; /* Full width for alignment */
 }
 
-/* menu icon */
-
+/* Menu Icon */
 .header .menu-icon {
   cursor: pointer;
   display: inline-block;
@@ -130,8 +133,7 @@
   top: -5px;
 }
 
-/* menu btn */
-
+/* Menu Button */
 .header .menu-btn {
   display: none;
 }
@@ -157,26 +159,33 @@
   top: 0;
 }
 
-/* 48em = 768px */
-
+/* Media Queries */
 @media (min-width: 48em) {
-  .header li {
-    float: left;
-  }
   .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column; /* Logo and menu on separate lines */
+    align-items: center; /* Center everything horizontally */
   }
+
+  .header .logo {
+    margin-bottom: 15px; /* Increased spacing for better separation */
+    width: 100%; /* Full width to center properly */
+  }
+
   .header .menu {
     max-height: none;
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    justify-content: center; /* Center navigation items */
+    width: 100%;
   }
+
   .header .menu-icon {
-    display: none;
+    display: none; /* Hide menu icon on large screens */
   }
 }
+
 @media (max-width: 960px) and (min-width: 768px) {
   .header {
-    font-size: 12px;
+    font-size: 12px; /* Adjust font size for mid-sized screens */
   }
 }

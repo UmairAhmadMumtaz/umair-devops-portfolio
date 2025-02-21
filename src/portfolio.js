@@ -10,7 +10,7 @@ import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your
 const splashScreen = {
   enabled: true, // set false to disable splash screen
   animation: splashAnimation,
-  duration: 2000 // Set animation duration as per your animation
+  duration: 500 // Set animation duration as per your animation
 };
 
 // Summary And Greeting Section
@@ -20,26 +20,34 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
-  subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
-  ),
-  resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
-  displayGreeting: true // Set false to hide this section, defaults to true
+    username: "Manish Shinde",
+    title: "Hi all, I'm Manish",
+    subTitle: emoji(`
+    Manish Shinde is a highly skilled Software Engineer with over 3 years of experience in software development, specializing in backend systems, cloud services, and applied artificial intelligence (AI). He has a proven track record of contributing to impactful projects at top-tier companies such as Amazon Web Services (AWS), Walmart, and Hewlett Packard Enterprise (HPE).
+
+    Currently, Manish is focused on Applied AI research, where he is gaining hands-on experience with the latest advancements in AI and machine learning. His expertise spans across backend development, frontend integration, machine learning engineering, and data science, making him a versatile professional capable of tackling complex technical challenges.
+
+    Throughout his career, Manish has demonstrated a strong ability to design and implement scalable, efficient, and user-centric solutions. His work includes developing automation scripts, building payment APIs, optimizing cloud infrastructure, and creating AI-driven applications. He is passionate about leveraging technology to solve real-world problems and is always eager to explore new tools and methodologies.
+
+    Manish holds a Master of Science in Computer Science from North Carolina State University and a Bachelor's in Computer Engineering from the University of Mumbai (VESIT). With a strong foundation in software engineering and a growing expertise in AI, he is actively seeking opportunities in software development, backend engineering, machine learning engineering, and data science roles.
+
+    Connect with Manish to explore collaborations, discuss innovative projects, or learn more about his work.
+  `),
+    resumeLink: "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing",
+    displayGreeting: true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+    github: "https://github.com/smanishs175",
+    linkedin: "https://www.linkedin.com/in/manishshinde175/",
+    kaggle: "https://www.kaggle.com/smanishs175",
+     gmail: "smanishs175@gmail.com",
+    gitlab: "https://gitlab.com/smanishs175",
+    facebook: "https://www.facebook.com/manish.shinde.56614",
+    medium: "https://medium.com/@smanishs175",
+    stackoverflow: "https://stackoverflow.com/users/10183788/manish-shinde?tab=profile",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -125,11 +133,22 @@ https://fontawesome.com/icons?d=gallery */
 const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
-    {
-      schoolName: "Harvard University",
+      {
+          schoolName: "University of Utah",
+          logo: require("./assets/images/harvardLogo.png"),
+          subHeader: "Master of Science in Computer Science",
+          duration: "Jan 2025 - Dec 2028",
+          desc: "Participated in the research of XXX and published 3 papers.",
+          descBullets: [
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+          ]
+      },
+      {
+      schoolName: "North Carolina State University ",
       logo: require("./assets/images/harvardLogo.png"),
       subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
+      duration: "August 2021 - Dec 2022",
       desc: "Participated in the research of XXX and published 3 papers.",
       descBullets: [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
@@ -137,9 +156,9 @@ const educationInfo = {
       ]
     },
     {
-      schoolName: "Stanford University",
+      schoolName: "University of Mumbai (Vivekanand Education Society's Institute of Technology , Mumbai)",
       logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
+      subHeader: "Bachelor of Engineering in Computer Engineering",
       duration: "September 2013 - April 2017",
       desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
       descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
@@ -155,14 +174,18 @@ const techStack = {
     {
       Stack: "Frontend/Design", //Insert stack or technology you have experience in
       progressPercentage: "90%" //Insert relative proficiency in percentage
-    },
+      },
+      {
+          Stack: "Artificial Intelligence",
+          progressPercentage: "90%"
+      },
     {
       Stack: "Backend",
-      progressPercentage: "70%"
+      progressPercentage: "90%"
     },
     {
       Stack: "Programming",
-      progressPercentage: "60%"
+      progressPercentage: "90%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -175,7 +198,7 @@ const workExperiences = {
   experience: [
     {
       role: "Software Engineer",
-      company: "Facebook",
+      company: "VibeSea Inc",
       companylogo: require("./assets/images/facebookLogo.png"),
       date: "June 2018 – Present",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -183,17 +206,28 @@ const workExperiences = {
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
       ]
-    },
+      },
+      {
+          role: "Software Engineer",
+          company: "Amazon Web Services Inc",
+          companylogo: require("./assets/images/facebookLogo.png"),
+          date: "June 2018 – Present",
+          desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          descBullets: [
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+          ]
+      },
     {
-      role: "Front-End Developer",
-      company: "Quora",
+      role: "Software Engineer",
+      company: "Walmart Inc ",
       companylogo: require("./assets/images/quoraLogo.png"),
       date: "May 2017 – May 2018",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
       role: "Software Engineer Intern",
-      company: "Airbnb",
+      company: "Hewlett Packard Enterprise",
       companylogo: require("./assets/images/airbnbLogo.png"),
       date: "Jan 2015 – Sep 2015",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."

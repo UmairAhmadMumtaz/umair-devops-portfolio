@@ -1,127 +1,222 @@
-@import "../../_globalColor";
-
-.main {
-  width: 90%;
-  padding: 20px 10px;
-  margin: 0px auto;
-  margin-top: 4rem;
-}
+/* Main greeting section */
 .greet-main {
-  width: 90%;
-  padding: 20px 10px;
-  margin: 0px auto;
-  margin-top: 2rem;
+    padding: 40px 20px;
+    background-color: #f5f5f5; /* Light grey background, Apple-inspired */
 }
 
-.greeting-main {
-  display: flex;
+/* Header for <Manish Shinde/> */
+.greeting-header {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.subTitle {
-  color: $subTitle !important;
+.greeting-logo {
+    font-size: 2.5rem; /* Adjust size as needed */
+    color: #333;
+    font-family: "Montserrat", sans-serif; /* Consistent with your earlier style */
+    font-weight: bold;
 }
 
-.greeting-main {
-  display: flex;
+/* Container for tiles */
+.greeting-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
 }
 
-.greeting-main > * {
-  flex: 1;
-  margin-bottom: 30px;
+/* Introduction tile (60% width) */
+.greeting-text-tile {
+    flex: 3;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    max-width: 60%;
+    transition: all 0.3s ease-in-out;
 }
 
-.empty-div {
-  margin-bottom: 40px;
+/* Animation tile (40% width) */
+.greeting-image-tile {
+    flex: 2;
+    max-width: 40%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.button-greeting-div {
-  display: flex;
-  margin-top: 40px;
-}
-.download-link-button {
-  text-decoration: none;
+/* Animation content */
+.greeting-image-tile > div,
+.greeting-image-tile > img {
+    max-width: 80%;
+    height: auto;
 }
 
+/* Heading within introduction tile */
 .greeting-text {
-  font-size: 70px;
-  line-height: 1.1;
-  color: $textColor !important;
+    font-size: 2rem; /* Smaller than logo for distinction */
+    line-height: 1.1;
+    margin: 0 0 20px;
+    color: #333;
 }
 
-.greeting-text-p {
-  font-size: 30px;
-  line-height: 40px;
+/* Introduction section */
+.intro-section {
+    transition: max-height 0.5s ease-in-out, opacity 0.3s ease-in-out;
+    overflow: hidden;
 }
 
-.greeting-image-div > img {
-  max-width: 100%;
-  height: auto;
+.intro-section.collapsed {
+    max-height: 100px;
+    opacity: 0.9;
 }
 
+.intro-section.expanded {
+    max-height: 1000px;
+    opacity: 1;
+}
+
+/* Paragraphs */
+.greeting-text-tile p {
+    margin: 0 0 15px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Social media tile */
+.social-media-tile {
+    display: flex;
+    justify-content: center; /* Center icons horizontally */
+    align-items: center;
+    background-color: #f0f0f0; /* Light background for the tile */
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Button container */
+.button-greeting-div {
+    display: flex;
+    justify-content: space-around; /* Equal spacing between buttons */
+    margin-top: 20px;
+    padding: 0 20px; /* Equal distance from both sides */
+}
+
+/* View toggle button */
+.view-toggle-button {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0;
+    text-decoration: underline;
+    margin-top: 10px;
+}
+
+.view-toggle-button:hover {
+    color: #0056b3;
+}
+
+/* Dark mode adjustments */
+.dark-mode {
+    background-color: #2b2b2b;
+    color: #e0e0e0;
+}
+
+.dark-mode .greeting-text-tile,
+.dark-mode .greeting-image-tile {
+    background-color: #3c3c3c;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .greeting-logo,
+.dark-mode .greeting-text {
+    color: #ffffff;
+}
+
+.dark-mode .greeting-text-tile p {
+    color: #d0d0d0;
+}
+
+.dark-mode .view-toggle-button {
+    color: #66b3ff;
+}
+
+.dark-mode .view-toggle-button:hover {
+    color: #99ccff;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+    .greeting-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .greeting-text-tile {
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    .greeting-image-tile {
+        max-width: 100%;
+        height: 300px;
+    }
+
+    .greeting-logo {
+        font-size: 2rem;
+    }
+
+    .greeting-text {
+        font-size: 1.5rem;
+    }
+
+    .intro-section.collapsed {
+        max-height: 120px;
+    }
+}
+
+/* Wave emoji animation */
 .wave-emoji {
-  animation-duration: 1.8s;
-  animation-iteration-count: infinite;
-  animation-name: wave;
-  display: inline-block;
-  transform-origin: 70% 70%;
+    animation-duration: 1.8s;
+    animation-iteration-count: infinite;
+    animation-name: wave;
+    display: inline-block;
+    transform-origin: 70% 70%;
 }
 
 @keyframes wave {
-  0% {
-    transform: rotate(0deg);
-  }
-  10% {
-    transform: rotate(-10deg);
-  }
-  20% {
-    transform: rotate(12deg);
-  }
-  30% {
-    transform: rotate(-10deg);
-  }
-  40% {
-    transform: rotate(9deg);
-  }
-  50% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
+    0% {
+        transform: rotate(0deg);
+    }
 
-/* Media Query */
-@media (max-width: 1380px) {
-  .greeting-text {
-    font-size: 50px;
-  }
-  .greeting-text-p {
-    font-size: 20px;
-  }
-}
-@media (max-width: 768px) {
-  .button-greeting-div {
-    justify-content: space-around;
-  }
-  .greeting-text {
-    font-size: 30px;
-    text-align: center;
-  }
-  .greeting-text-p {
-    font-size: 16px;
-    line-height: normal;
-    text-align: center;
-  }
-  .greeting-main {
-    display: block;
-  }
-  .greeting-image-div {
-    height: 256px;
-  }
-}
+    10% {
+        transform: rotate(-10deg);
+    }
 
-@media (max-width: 320px) {
-  .main {
-    width: auto;
-  }
+    20% {
+        transform: rotate(12deg);
+    }
+
+    30% {
+        transform: rotate(-10deg);
+    }
+
+    40% {
+        transform: rotate(9deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
 }

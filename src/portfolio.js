@@ -1,441 +1,248 @@
-/* Change this file to get your personal Portfolio */
-
-// To change portfolio colors globally go to the  _globalColor.scss file
-
 import emoji from "react-easy-emoji";
-import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+import splashAnimation from "./assets/lottie/splashAnimation";
 
 // Splash Screen
-
 const splashScreen = {
-  enabled: true, // set false to disable splash screen
-  animation: splashAnimation,
-  duration: 500 // Set animation duration as per your animation
+    enabled: true,
+    animation: splashAnimation,
+    duration: 500
 };
 
-// Summary And Greeting Section
-
+// Greeting Section
 const illustration = {
-  animated: true // Set to false to use static SVG
+    animated: true
 };
 
-const greeting = {
-    username: "Manish Shinde",
-    title: "Hi all, I'm Manish",
-    subTitle: emoji(`
-    Manish Shinde is a highly skilled Software Engineer with over 3 years of experience in software development, specializing in backend systems, cloud services, and applied artificial intelligence (AI). He has a proven track record of contributing to impactful projects at top-tier companies such as Amazon Web Services (AWS), Walmart, and Hewlett Packard Enterprise (HPE).
+export const greeting = {
+    displayGreeting: true,
+    username: "Manish Shinde", // For top display as <Manish Shinde/>
+    title: "Hi, I'm Manish", // For introduction tile
+    briefIntro: `
+        Dynamic Software Engineer with over 3 years of experience in backend, cloud, and AI, delivering innovative solutions at AWS, Walmart, and HPE. Enthusiastically advancing Applied AI and Machine Learning breakthroughs throught research while excelling in Software Development.
+    `,
+    detailedIntro: `
+        Manish Shinde is a highly skilled Software Engineer with over 3 years of experience in software development, specializing in backend systems, cloud services, and applied artificial intelligence (AI). He has a proven track record of contributing to impactful projects at top-tier companies such as Amazon Web Services (AWS), Walmart, Hewlett Packard Enterprise (HPE), and a startup VibeSea Inc.
 
-    Currently, Manish is focused on Applied AI research, where he is gaining hands-on experience with the latest advancements in AI and machine learning. His expertise spans across backend development, frontend integration, machine learning engineering, and data science, making him a versatile professional capable of tackling complex technical challenges.
+        Currently, Manish is focused on Applied AI research and Software Development, where he is gaining hands-on experience with the latest advancements in AI and machine learning and applications. His expertise spans backend development, frontend development, machine learning engineering, data science, and product management, making him a versatile professional capable of tackling complex technical challenges.
 
-    Throughout his career, Manish has demonstrated a strong ability to design and implement scalable, efficient, and user-centric solutions. His work includes developing automation scripts, building payment APIs, optimizing cloud infrastructure, and creating AI-driven applications. He is passionate about leveraging technology to solve real-world problems and is always eager to explore new tools and methodologies.
+        Throughout his career, Manish has demonstrated a strong ability to design and implement scalable, efficient, and user-centric solutions. His work includes developing automation scripts, building payment APIs, optimizing cloud infrastructure, and creating AI-driven applications. He is passionate about leveraging technology to solve real-world problems and is always eager to explore new tools and methodologies.
 
-    Manish holds a Master of Science in Computer Science from North Carolina State University and a Bachelor's in Computer Engineering from the University of Mumbai (VESIT). With a strong foundation in software engineering and a growing expertise in AI, he is actively seeking opportunities in software development, backend engineering, machine learning engineering, and data science roles.
+        Manish is a PhD Student at the University of Utah. He holds a Master of Science in Computer Science from North Carolina State University and a Bachelor’s in Computer Engineering from the University of Mumbai (VESIT).
 
-    Connect with Manish to explore collaborations, discuss innovative projects, or learn more about his work.
-  `),
-    resumeLink: "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing",
-    displayGreeting: true
+        Connect with Manish to explore collaborations, discuss innovative projects, or learn more about his work.
+    `,
+    resumeLink: "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing"
 };
 
-// Social Media Links
-
+// Social Media Links (unchanged)
 const socialMediaLinks = {
     github: "https://github.com/smanishs175",
     linkedin: "https://www.linkedin.com/in/manishshinde175/",
     kaggle: "https://www.kaggle.com/smanishs175",
-     gmail: "smanishs175@gmail.com",
+    gmail: "smanishs175@gmail.com",
     gitlab: "https://gitlab.com/smanishs175",
     facebook: "https://www.facebook.com/manish.shinde.56614",
     medium: "https://medium.com/@smanishs175",
     stackoverflow: "https://stackoverflow.com/users/10183788/manish-shinde?tab=profile",
-  // Instagram, Twitter and Kaggle are also supported in the links!
-  // To customize icons and social links, tweak src/components/SocialMedia
-  display: true // Set true to display this section, defaults to false
+    display: true
 };
 
-// Skills Section
-
+// Skills Section (unchanged)
 const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
-  skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
-  ],
-
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
-
-  softwareSkills: [
-    {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
+    title: "What I do",
+    subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+    skills: [
+        emoji("⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"),
+        emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+        emoji("⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean")
+    ],
+    softwareSkills: [
+        { skillName: "html-5", fontAwesomeClassname: "fab fa-html5" },
+        { skillName: "css3", fontAwesomeClassname: "fab fa-css3-alt" },
+        { skillName: "sass", fontAwesomeClassname: "fab fa-sass" },
+        { skillName: "JavaScript", fontAwesomeClassname: "fab fa-js" },
+        { skillName: "reactjs", fontAwesomeClassname: "fab fa-react" },
+        { skillName: "nodejs", fontAwesomeClassname: "fab fa-node" },
+        { skillName: "npm", fontAwesomeClassname: "fab fa-npm" },
+        { skillName: "sql-database", fontAwesomeClassname: "fas fa-database" },
+        { skillName: "aws", fontAwesomeClassname: "fab fa-aws" },
+        { skillName: "firebase", fontAwesomeClassname: "fas fa-fire" },
+        { skillName: "python", fontAwesomeClassname: "fab fa-python" },
+        { skillName: "docker", fontAwesomeClassname: "fab fa-docker" }
+    ],
+    display: true
 };
 
-// Education Section
-
+// Education Section (unchanged)
 const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
-  schools: [
-      {
-          schoolName: "University of Utah",
-          logo: require("./assets/images/harvardLogo.png"),
-          subHeader: "Master of Science in Computer Science",
-          duration: "Jan 2025 - Dec 2028",
-          desc: "Participated in the research of XXX and published 3 papers.",
-          descBullets: [
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-          ]
-      },
-      {
-      schoolName: "North Carolina State University ",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "August 2021 - Dec 2022",
-      desc: "Participated in the research of XXX and published 3 papers.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
-    },
-    {
-      schoolName: "University of Mumbai (Vivekanand Education Society's Institute of Technology , Mumbai)",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Engineering in Computer Engineering",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
-    }
-  ]
+    display: true,
+    schools: [
+        {
+            schoolName: "North Carolina State University",
+            logo: require("./assets/images/ncsuLogo.png"),
+            subHeader: "Master of Science in Computer Science",
+            duration: "August 2021 - Dec 2022",
+            desc: "Participated in research and published papers.",
+            descBullets: ["Coursework: Software Engineering, Distributed Systems, Algorithms"]
+        },
+        {
+            schoolName: "University of Mumbai (VESIT)",
+            logo: require("./assets/images/vesitLogo.png"),
+            subHeader: "Bachelor of Engineering in Computer Engineering",
+            duration: "July 2017 - May 2021",
+            desc: "Ranked top 10% in the program.",
+            descBullets: ["Relevant coursework: Operating Systems, Web Development"]
+        }
+    ]
 };
 
-// Your top 3 proficient stacks/tech experience
-
+// Tech Stack Section (unchanged)
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
-  experience: [
-    {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
-      },
-      {
-          Stack: "Artificial Intelligence",
-          progressPercentage: "90%"
-      },
-    {
-      Stack: "Backend",
-      progressPercentage: "90%"
-    },
-    {
-      Stack: "Programming",
-      progressPercentage: "90%"
-    }
-  ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+    viewSkillBars: true,
+    experience: [
+        { Stack: "Frontend/Design", progressPercentage: "90%" },
+        { Stack: "Backend", progressPercentage: "90%" },
+        { Stack: "Programming", progressPercentage: "90%" }
+    ],
+    displayCodersrank: false
 };
 
-// Work experience section
-
+// Work Experience Section (unchanged)
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
-  experience: [
-    {
-      role: "Software Engineer",
-      company: "VibeSea Inc",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
-      },
-      {
-          role: "Software Engineer",
-          company: "Amazon Web Services Inc",
-          companylogo: require("./assets/images/facebookLogo.png"),
-          date: "June 2018 – Present",
-          desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          descBullets: [
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-          ]
-      },
-    {
-      role: "Software Engineer",
-      company: "Walmart Inc ",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-      role: "Software Engineer Intern",
-      company: "Hewlett Packard Enterprise",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    }
-  ]
+    display: true,
+    experience: [
+        {
+            role: "Software Engineer",
+            company: "VibeSea Inc",
+            companylogo: require("./assets/images/vibeseaLogo.png"),
+            date: "Mar 2024 – Present",
+            desc: "Leading development of scalable web and mobile applications.",
+            descBullets: ["Tech stack: TypeScript, React Native, Node.js, AWS"]
+        },
+        {
+            role: "Software Development Engineer",
+            company: "Amazon Web Services",
+            companylogo: require("./assets/images/awsLogo.png"),
+            date: "Jul 2023 – Feb 2024",
+            desc: "Automated EC2 VPC API database management.",
+            descBullets: ["Tools: Python, Ruby on Rails, Jenkins, AWS CodePipeline"]
+        }
+    ]
 };
 
-/* Your Open Source Section to View Your Github Pinned Projects
-To know how to get github key look at readme.md */
-
+// Open Source Section (unchanged)
 const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+    showGithubProfile: "true",
+    display: true
 };
 
-// Some big projects you have worked on
-
+// Big Projects Section (unchanged)
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
-  projects: [
-    {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
+    title: "Big Projects",
+    subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+    projects: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
+            image: require("./assets/images/project1.png"),
+            projectName: "Project One",
+            projectDesc: "Description of project one.",
+            footerLink: [{ name: "Visit Website", url: "http://example.com/" }]
         }
-        //  you can add extra buttons here.
-      ]
-    },
-    {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://nextu.se/"
-        }
-      ]
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
+    ],
+    display: true
 };
 
-// Achievement Section
-// Include certificates, talks etc
-
+// Achievement Section (unchanged)
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
-  subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
-
-  achievementsCards: [
-    {
-      title: "Google Code-In Finalist",
-      subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
-      footerLink: [
+    title: emoji("Achievements And Certifications 🏆 "),
+    subtitle: "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done!",
+    achievementsCards: [
         {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+            title: "Certification 1",
+            subtitle: "Description of certification 1.",
+            image: require("./assets/images/cert1.png"),
+            footerLink: [{ name: "Certification", url: "http://example.com/" }]
         }
-      ]
-    },
-    {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
-      footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
-    },
-
-    {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
-      ]
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
+    ],
+    display: true
 };
 
-// Blogs Section
-
+// Blogs Section (unchanged)
 const blogSection = {
-  title: "Blogs",
-  subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
-  blogs: [
-    {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
-      description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
-    },
-    {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
-      description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
+    title: "Blogs",
+    subtitle: "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
+    displayMediumBlogs: "true",
+    blogs: [
+        {
+            url: "https://medium.com/@smanishs175",
+            title: "Blog Title 1",
+            description: "Blog description 1"
+        }
+    ],
+    display: true
 };
 
-// Talks Sections
-
+// Talks Section (unchanged)
 const talkSection = {
-  title: "TALKS",
-  subtitle: emoji(
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
-  ),
-
-  talks: [
-    {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
+    title: "TALKS",
+    subtitle: emoji("I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"),
+    talks: [
+        {
+            title: "Talk Title",
+            subtitle: "Talk Subtitle",
+            slides_url: "http://example.com/",
+            event_url: "http://example.com/"
+        }
+    ],
+    display: true
 };
 
-// Podcast Section
-
+// Podcast Section (unchanged)
 const podcastSection = {
-  title: emoji("Podcast 🎙️"),
-  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
-
-  // Please Provide with Your Podcast embeded Link
-  podcast: [
-    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
-  ],
-  display: true // Set false to hide this section, defaults to true
+    title: emoji("Podcast 🎙️"),
+    subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
+    podcast: ["http://example.com/"],
+    display: true
 };
 
-// Resume Section
+// Resume Section (unchanged)
 const resumeSection = {
-  title: "Resume",
-  subtitle: "Feel free to download my resume",
-
-  // Please Provide with Your Podcast embeded Link
-  display: true // Set false to hide this section, defaults to true
+    title: "Resume",
+    subtitle: "Feel free to download my resume",
+    display: true
 };
 
+// Contact Info (unchanged)
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
-  subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+    title: emoji("Contact Me ☎️"),
+    subtitle: "Discuss a project or just want to say hi? My Inbox is open for all.",
+    number: "+1-341-500-2325",
+    email_address: "smanishs175@gmail.com"
 };
 
-// Twitter Section
-
+// Twitter Section (unchanged)
 const twitterDetails = {
-  userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+    userName: "twitter",
+    display: true
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true;
 
 export {
-  illustration,
-  greeting,
-  socialMediaLinks,
-  splashScreen,
-  skillsSection,
-  educationInfo,
-  techStack,
-  workExperiences,
-  openSource,
-  bigProjects,
-  achievementSection,
-  blogSection,
-  talkSection,
-  podcastSection,
-  contactInfo,
-  twitterDetails,
-  isHireable,
-  resumeSection
+    illustration,
+    socialMediaLinks,
+    splashScreen,
+    skillsSection,
+    educationInfo,
+    techStack,
+    workExperiences,
+    openSource,
+    bigProjects,
+    achievementSection,
+    blogSection,
+    talkSection,
+    podcastSection,
+    contactInfo,
+    twitterDetails,
+    isHireable,
+    resumeSection
 };

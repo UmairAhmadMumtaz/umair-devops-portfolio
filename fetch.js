@@ -34,9 +34,17 @@ async function fetchWithRetry(options, data, retries = 5, delay = 5000) {
               resolve(responseData);
             } else if (res.statusCode === 429 && i < retries - 1) {
               console.log(`Rate limited. Retrying in ${delay}ms...`);
-              setTimeout(() => resolve(fetchWithRetry(options, data, retries - 1, delay)), delay);
+              setTimeout(
+                () =>
+                  resolve(fetchWithRetry(options, data, retries - 1, delay)),
+                delay
+              );
             } else {
-              reject(new Error(`${options.path} request failed with status code: ${res.statusCode}`));
+              reject(
+                new Error(
+                  `${options.path} request failed with status code: ${res.statusCode}`
+                )
+              );
             }
           });
         });

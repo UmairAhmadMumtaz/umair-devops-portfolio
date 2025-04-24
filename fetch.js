@@ -2,6 +2,7 @@ fs = require("fs");
 const https = require("https");
 process = require("process");
 require("dotenv").config();
+const { fetchGitHubStats } = require("contribution");
 
 const GITHUB_TOKEN = process.env.REACT_APP_GITHUB_TOKEN;
 const GITHUB_USERNAME = process.env.GITHUB_USERNAME;
@@ -16,6 +17,26 @@ const ERR = {
   requestFailedMedium:
     "The request to Medium didn't succeed. Check if Medium username in your .env file is correct."
 };
+
+async function fetchGitHubContributions(username) {
+  if (!username) {
+    throw new Error("GitHub username is required to fetch contributions.");
+  }
+
+  console.log(`Fetching GitHub contributions for ${username}`);
+  try {
+    const stats = await fetchGitHubStats(username);
+    
+    // Optional: Enhance the data with additional information if needed
+    // For example, you could add more properties or calculated values here
+    
+    fs.writeFileSync("./public/contributions.json", JSON.stringify(stats, null, 2));
+    console.log("Saved contributions data to public/contributions.json");
+  } catch (error) {
+    console.error("Failed to fetch GitHub contributions:", error);
+  }
+}
+
 if (USE_GITHUB_DATA === "true") {
   if (GITHUB_USERNAME === undefined) {
     throw new Error(ERR.noUserName);
@@ -92,6 +113,9 @@ if (USE_GITHUB_DATA === "true") {
 
   req.write(data);
   req.end();
+
+  // Fetch GitHub contributions
+  fetchGitHubContributions(GITHUB_USERNAME);
 }
 
 if (MEDIUM_USERNAME !== undefined) {

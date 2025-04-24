@@ -1,12 +1,12 @@
-import React, { useEffect, useState, useContext } from "react";
-import { Fade } from "react-reveal";
+import React, {useEffect, useState, useContext} from "react";
+import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 import "./Contributions.scss";
 
 const Contributions = () => {
   const [contributions, setContributions] = useState(null);
   const [error, setError] = useState(null);
-  const { isDark } = useContext(StyleContext);
+  const {isDark} = useContext(StyleContext);
 
   useEffect(() => {
     const getContributions = async () => {
@@ -26,7 +26,7 @@ const Contributions = () => {
     getContributions();
   }, []);
 
-  const getColorIntensity = (count) => {
+  const getColorIntensity = count => {
     if (count === 0) return 0;
     if (count <= 1) return 1;
     if (count <= 3) return 2;
@@ -58,13 +58,13 @@ const Contributions = () => {
     const allMonths = [];
     const tempDate = new Date(startDate);
     while (allMonths.length < 12) {
-      const monthName = tempDate.toLocaleString('default', { month: 'short' });
+      const monthName = tempDate.toLocaleString("default", {month: "short"});
       if (!allMonths.includes(monthName)) {
         allMonths.push(monthName);
       }
       tempDate.setMonth(tempDate.getMonth() + 1);
     }
-    
+
     // Initialize empty month data for all months
     allMonths.forEach(month => {
       months.push({
@@ -75,10 +75,10 @@ const Contributions = () => {
 
     // Fill in the actual contribution data
     while (currentDate <= today) {
-      const dateStr = currentDate.toISOString().split('T')[0];
-      const month = currentDate.toLocaleString('default', { month: 'short' });
+      const dateStr = currentDate.toISOString().split("T")[0];
+      const month = currentDate.toLocaleString("default", {month: "short"});
       const monthIndex = allMonths.indexOf(month);
-      
+
       if (currentMonth !== month) {
         if (currentMonth !== null && currentWeek.length > 0) {
           currentWeeks.push([...currentWeek]);
@@ -108,7 +108,7 @@ const Contributions = () => {
     if (currentWeek.length > 0) {
       currentWeeks.push([...currentWeek]);
     }
-    
+
     // Add the last month's weeks
     if (currentMonth !== null) {
       const lastMonthIndex = allMonths.indexOf(currentMonth);
@@ -125,7 +125,9 @@ const Contributions = () => {
   }
 
   if (!contributions) {
-    return <div className="contributions-loading">Loading contributions...</div>;
+    return (
+      <div className="contributions-loading">Loading contributions...</div>
+    );
   }
 
   const calendar = getContributionCalendar();
@@ -135,39 +137,51 @@ const Contributions = () => {
       <div className="main" id="contributions">
         <div className="contributions-container">
           <h1 className="contributions-title">GitHub Contributions</h1>
-          
+
           <div className="stat-cards-container">
             <div className={isDark ? "stat-card dark-mode" : "stat-card"}>
               <h3>Total</h3>
-              <div className="stat-value">{contributions.totalContributions}</div>
+              <div className="stat-value">
+                {contributions.totalContributions}
+              </div>
               <div className="stat-label">contributions</div>
             </div>
-            
+
             <div className={isDark ? "stat-card dark-mode" : "stat-card"}>
               <h3>Best Streak</h3>
               <div className="stat-value">{contributions.bestStreak}</div>
               <div className="stat-label">days</div>
             </div>
-            
+
             <div className={isDark ? "stat-card dark-mode" : "stat-card"}>
               <h3>Current Streak</h3>
               <div className="stat-value">{contributions.currentStreak}</div>
               <div className="stat-label">days</div>
             </div>
-            
+
             <div className={isDark ? "stat-card dark-mode" : "stat-card"}>
               <h3>Today</h3>
-              <div className="stat-value">{contributions.todaysContributions}</div>
+              <div className="stat-value">
+                {contributions.todaysContributions}
+              </div>
               <div className="stat-label">contributions</div>
             </div>
           </div>
-          
-          <div className={isDark ? "contribution-graph-container dark-mode" : "contribution-graph-container"}>
+
+          <div
+            className={
+              isDark
+                ? "contribution-graph-container dark-mode"
+                : "contribution-graph-container"
+            }
+          >
             <h2>Yearly Contribution Activity</h2>
             <div className="contribution-graph">
               <div className="months-labels">
                 {calendar.map((month, i) => (
-                  <div key={`month-${i}`} className="month-label">{month.name}</div>
+                  <div key={`month-${i}`} className="month-label">
+                    {month.name}
+                  </div>
                 ))}
               </div>
               <div className="days-labels">
@@ -179,9 +193,12 @@ const Contributions = () => {
                 {calendar.map((month, monthIndex) => (
                   <div key={`month-${monthIndex}`} className="month-container">
                     {month.weeks.map((week, weekIndex) => (
-                      <div key={`week-${monthIndex}-${weekIndex}`} className="week">
+                      <div
+                        key={`week-${monthIndex}-${weekIndex}`}
+                        className="week"
+                      >
                         {week.map((day, dayIndex) => (
-                          <div 
+                          <div
                             key={`day-${monthIndex}-${weekIndex}-${dayIndex}`}
                             className={`day level-${day.intensity}`}
                             title={`${day.date}: ${day.count} contributions`}

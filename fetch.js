@@ -2,7 +2,7 @@ fs = require("fs");
 const https = require("https");
 process = require("process");
 require("dotenv").config();
-const { fetchGitHubStats } = require("contribution");
+const {fetchGitHubStats} = require("contribution");
 
 const GITHUB_TOKEN = process.env.REACT_APP_GITHUB_TOKEN;
 const GITHUB_USERNAME = process.env.GITHUB_USERNAME;
@@ -26,11 +26,14 @@ async function fetchGitHubContributions(username) {
   console.log(`Fetching GitHub contributions for ${username}`);
   try {
     const stats = await fetchGitHubStats(username);
-    
+
     // Optional: Enhance the data with additional information if needed
     // For example, you could add more properties or calculated values here
-    
-    fs.writeFileSync("./public/contributions.json", JSON.stringify(stats, null, 2));
+
+    fs.writeFileSync(
+      "./public/contributions.json",
+      JSON.stringify(stats, null, 2)
+    );
     console.log("Saved contributions data to public/contributions.json");
   } catch (error) {
     console.error("Failed to fetch GitHub contributions:", error);

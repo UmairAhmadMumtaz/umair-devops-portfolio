@@ -48,7 +48,9 @@
     background-color: $darkBackground;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 
-    h3, .stat-value, .stat-label {
+    h3,
+    .stat-value,
+    .stat-label {
       color: $textColorDark;
     }
   }
@@ -144,23 +146,23 @@
   height: 10px;
   margin: 2px;
   border-radius: 2px;
-  
+
   &.level-0 {
     background-color: #ebedf0;
   }
-  
+
   &.level-1 {
     background-color: #9be9a8;
   }
-  
+
   &.level-2 {
     background-color: #40c463;
   }
-  
+
   &.level-3 {
     background-color: #30a14e;
   }
-  
+
   &.level-4 {
     background-color: #216e39;
   }
@@ -173,11 +175,11 @@
   margin-top: 15px;
   font-size: 12px;
   color: $subTitle;
-  
+
   span {
     margin: 0 5px;
   }
-  
+
   .legend-item {
     width: 10px;
     height: 10px;
@@ -196,13 +198,13 @@
       color: $textColorDark;
     }
   }
-  
+
   .days-labels span,
   .months-labels .month-label,
   .contribution-legend span {
     color: $textColorDark;
   }
-  
+
   .day {
     &.level-0 {
       background-color: #161b22;
@@ -216,24 +218,24 @@
     font-size: 40px;
     text-align: center;
   }
-  
+
   .stat-cards-container {
     flex-direction: column;
-    
+
     .stat-card {
       min-width: 100%;
     }
   }
-  
+
   .contribution-graph-container {
     padding: 15px;
-    
+
     h2 {
       font-size: 20px;
       text-align: center;
     }
   }
-  
+
   .days-labels {
     height: 80px;
   }

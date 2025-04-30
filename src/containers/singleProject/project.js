@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useContext } from "react";
-import { useParams } from "react-router-dom";
+import React, {useState, useEffect, useContext} from "react";
+import {useParams} from "react-router-dom";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import StyleContext from "../../contexts/StyleContext";
@@ -8,10 +8,10 @@ import Button from "../../components/button/Button";
 import Loading from "../loading/Loading";
 
 export default function SingleProject() {
-  const { id } = useParams();
+  const {id} = useParams();
   const [project, setProject] = useState(null);
   const [loading, setLoading] = useState(true);
-  const { isDark } = useContext(StyleContext);
+  const {isDark} = useContext(StyleContext);
 
   useEffect(() => {
     const fetchProjectData = async () => {
@@ -21,15 +21,15 @@ export default function SingleProject() {
         if (!response.ok) {
           throw new Error("Failed to fetch project data");
         }
-        
+
         const data = await response.json();
         const allProjects = data.data.user.pinnedItems.edges;
-        
+
         // Find the specific project by ID
         const selectedProject = allProjects.find(
-          (project) => project.node.id === id
+          project => project.node.id === id
         );
-        
+
         if (selectedProject) {
           setProject(selectedProject.node);
         } else {
@@ -73,7 +73,7 @@ export default function SingleProject() {
       <Header />
       <div className="main single-project">
         <h1 className="project-title">{project.name}</h1>
-        
+
         <div className="project-details">
           <div className="project-header">
             <div className="project-metadata">
@@ -88,15 +88,15 @@ export default function SingleProject() {
               </div>
             </div>
           </div>
-          
+
           <div className="project-topics">
-            {project.repositoryTopics?.edges?.map((topic) => (
+            {project.repositoryTopics?.edges?.map(topic => (
               <span key={topic.node.id} className="topic">
                 {topic.node.topic.name}
               </span>
             ))}
           </div>
-          
+
           <div className="project-links">
             <Button
               text={"View Code"}
@@ -113,7 +113,7 @@ export default function SingleProject() {
               />
             )}
           </div>
-          
+
           {/* You can add more sections here like README content, screenshots, etc. */}
         </div>
       </div>

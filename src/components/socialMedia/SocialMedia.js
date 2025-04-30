@@ -127,6 +127,17 @@ export default function socialMedia() {
           <span></span>
         </a>
       ) : null}
+      {socialMediaLinks.aws ? (
+        <a
+          href={socialMediaLinks.aws}
+          className="icon-button kaggle"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fab fa-aws"></i>
+          <span></span>
+        </a>
+      ) : null}
     </div>
   );
 }

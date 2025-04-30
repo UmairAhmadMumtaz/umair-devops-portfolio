@@ -4,8 +4,7 @@
   padding-left: 0;
   list-style: none;
   font-size: 3rem;
-  margin-bottom: 0px;
-  margin-top: 0px;
+  margin: 0;
   text-align: center;
 }
 
@@ -17,18 +16,6 @@
 
 .software-skill-inline > i {
   color: $subTitle;
-}
-
-.software-skill-inline > i:hover {
-  color: $skillsColor;
-}
-.software-skill-inline > p {
-  color: $subTitle;
-  font-size: 10px;
-}
-
-.software-skill-inline > i {
-  color: $subTitle;
   transition: color 0.3s;
 }
 
@@ -36,69 +23,4 @@
   color: $subTitle;
   font-size: 10px;
   transition: color 0.3s;
-}
-
-/* HTML5 */
-.software-skill-inline > .fa-html5:hover {
-  color: #e34f26;
-}
-
-/* CSS3 */
-.software-skill-inline > .fa-css3-alt:hover {
-  color: #1572b6;
-}
-
-/* Sass */
-.software-skill-inline > .fa-sass:hover {
-  color: #cc6699;
-}
-
-/* JavaScript */
-.software-skill-inline > .fa-js:hover {
-  color: #f7df1e;
-}
-
-/* React */
-.software-skill-inline > .fa-react:hover {
-  color: #61dbfb;
-}
-
-/* Node.js */
-.software-skill-inline > .fa-node:hover {
-  color: #68a063;
-}
-
-/* Swift */
-.software-skill-inline > .fa-swift:hover {
-  color: #ffac45;
-}
-
-/* NPM */
-.software-skill-inline > .fa-npm:hover {
-  color: #cb3837;
-}
-
-/* Database */
-.software-skill-inline > .fa-database:hover {
-  color: #f29111;
-}
-
-/* AWS */
-.software-skill-inline > .fa-aws:hover {
-  color: #ff9900;
-}
-
-/* Firebase */
-.software-skill-inline > .fa-fire:hover {
-  color: #ffca28;
-}
-
-/* Python */
-.software-skill-inline > .fa-python:hover {
-  color: #3776ab;
-}
-
-/* Docker */
-.software-skill-inline > .fa-docker:hover {
-  color: #0db7ed;
 }

@@ -24,6 +24,15 @@ function Header() {
   const viewTalks = talkSection.display;
   const viewResume = resumeSection.display;
 
+  const handleThemeToggle = () => {
+    if (window.innerWidth <= 770) {
+      const menuCheckbox = document.getElementById("menu-btn");
+      if (menuCheckbox) {
+        menuCheckbox.checked = false;
+      }
+    }
+  };
+
   return (
     <Headroom>
       <header className={isDark ? "dark-menu header" : "header"}>
@@ -82,7 +91,7 @@ function Header() {
           <li>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a>
-              <ToggleSwitch />
+              <ToggleSwitch onToggle={handleThemeToggle} />
             </a>
           </li>
         </ul>
@@ -90,4 +99,5 @@ function Header() {
     </Headroom>
   );
 }
+
 export default Header;

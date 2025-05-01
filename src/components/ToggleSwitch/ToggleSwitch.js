@@ -1,22 +1,27 @@
-import React, {useState, useContext} from "react";
+import React, { useState, useContext } from "react";
 import emoji from "react-easy-emoji";
 import StyleContext from "../../contexts/StyleContext";
 import "./ToggleSwitch.scss";
 
-const ToggleSwitch = () => {
-  const {isDark} = useContext(StyleContext);
+const ToggleSwitch = ({ onToggle }) => {
+  const { isDark, changeTheme } = useContext(StyleContext);
   const [isChecked, setChecked] = useState(isDark);
-  const styleContext = useContext(StyleContext);
+
+  const handleChange = () => {
+    changeTheme();
+    setChecked(!isChecked);
+
+    if (onToggle) {
+      onToggle(); 
+    }
+  };
 
   return (
     <label className="switch">
       <input
         type="checkbox"
-        checked={isDark}
-        onChange={() => {
-          styleContext.changeTheme();
-          setChecked(!isChecked);
-        }}
+        checked={isChecked}
+        onChange={handleChange}
       />
       <span className="slider round">
         <span className="emoji">{isChecked ? emoji("🌜") : emoji("☀️")}</span>
@@ -24,4 +29,5 @@ const ToggleSwitch = () => {
     </label>
   );
 };
+
 export default ToggleSwitch;

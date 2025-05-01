@@ -1,4 +1,4 @@
-import React, {useContext} from "react";
+import React, { useContext } from "react";
 import Headroom from "react-headroom";
 import "./Header.scss";
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
@@ -15,7 +15,7 @@ import {
 } from "../../portfolio";
 
 function Header() {
-  const {isDark} = useContext(StyleContext);
+  const { isDark } = useContext(StyleContext);
   const viewExperience = workExperiences.display;
   const viewOpenSource = openSource.display;
   const viewSkills = skillsSection.display;
@@ -23,6 +23,15 @@ function Header() {
   const viewBlog = blogSection.display;
   const viewTalks = talkSection.display;
   const viewResume = resumeSection.display;
+
+  const handleThemeToggle = () => {
+    if (window.innerWidth <= 770) {
+      const menuCheckbox = document.getElementById("menu-btn");
+      if (menuCheckbox) {
+        menuCheckbox.checked = false;
+      }
+    }
+  };
 
   return (
     <Headroom>
@@ -36,7 +45,7 @@ function Header() {
         <label
           className="menu-icon"
           htmlFor="menu-btn"
-          style={{color: "white"}}
+          style={{ color: "white" }}
         >
           <span className={isDark ? "navicon navicon-dark" : "navicon"}></span>
         </label>
@@ -82,7 +91,7 @@ function Header() {
           <li>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a>
-              <ToggleSwitch />
+              <ToggleSwitch onToggle={handleThemeToggle} />
             </a>
           </li>
         </ul>
@@ -90,4 +99,5 @@ function Header() {
     </Headroom>
   );
 }
+
 export default Header;

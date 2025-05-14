@@ -47,15 +47,14 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "I’m an out-of-the-box thinker who ensures the product is built right, focusing on quality, usability, and long-term reliability.",
+  subTitle:
+    "I’m an out-of-the-box thinker who ensures the product is built right, focusing on quality, usability, and long-term reliability.",
   skills: [
     emoji(
       "⚡ Develop highly interactive Front end & Back end automated testing solutions for your web, desktop, api and mobile applications"
     ),
     emoji("⚡ Expertise in micro service architecture application testing"),
-    emoji(
-      "⚡ Any time testing by introducing test process in CI/CD"
-    )
+    emoji("⚡ Any time testing by introducing test process in CI/CD")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -176,8 +175,7 @@ const techStack = {
     {
       Stack: "CI/CD",
       progressPercentage: "70%"
-    },
-    
+    }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
@@ -301,11 +299,15 @@ const achievementSection = {
     },
     {
       title: "AWS Partner: Technical Accredited",
-      subtitle: "AWS Partners who have developed fundamental, technical knowledge of AWS cloud computing, global infrastructure, services, solutions, migration and security.",
+      subtitle:
+        "AWS Partners who have developed fundamental, technical knowledge of AWS cloud computing, global infrastructure, services, solutions, migration and security.",
       image: require("./assets/images/aws_prac_.png"),
       imageAlt: "AWS Partner Logo",
       footerLink: [
-        {name: "Certification", url: "https://www.credly.com/badges/35fac17d-16cd-4ba5-8021-49bf0516c759/public_url"}
+        {
+          name: "Certification",
+          url: "https://www.credly.com/badges/35fac17d-16cd-4ba5-8021-49bf0516c759/public_url"
+        }
       ]
     }
   ],
@@ -316,8 +318,7 @@ const achievementSection = {
 
 const blogSection = {
   title: "Blogs",
-  subtitle:
-    "I love to share knowledge as a instructor & colleague",
+  subtitle: "I love to share knowledge as a instructor & colleague",
   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
@@ -325,7 +326,7 @@ const blogSection = {
       title: "QA instructor",
       description:
         "Test Automation session delivered as part of the qualitest instructor"
-    },
+    }
   ],
   display: true // Set false to hide this section, defaults to true
 };

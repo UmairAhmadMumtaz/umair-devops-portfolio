@@ -45,7 +45,8 @@ export default function Greeting() {
                     href={greeting.resumeLink}
                     download="Resume.pdf"
                     className="download-link-button"
-                    target="_blank" rel="noreferrer"
+                    target="_blank"
+                    rel="noreferrer"
                   >
                     <Button text="Download my resume" />
                   </a>

@@ -79,7 +79,12 @@
 
 .experience-roundedimg {
   position: absolute;
-  object-fit: cover;
+  object-fit: contain;
+  background-color: white;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0.5rem;
   left: 0;
   right: 0;
   top: 7rem;
@@ -153,4 +158,11 @@
   .experience-text-desc {
     font-size: 16px;
   }
+}
+
+.experience-roundedimg[src*="myunt.png"] {
+  object-fit: contain;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 10px;
 }

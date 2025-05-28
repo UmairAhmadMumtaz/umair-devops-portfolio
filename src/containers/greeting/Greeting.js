@@ -47,7 +47,7 @@ export default function Greeting() {
                     rel="noopener noreferrer"
                     className="download-link-button"
                   >
-                    <Button text="View my resume" /> 
+                    <Button text="View my resume" />
                   </a>
                 )}
               </div>
@@ -55,11 +55,11 @@ export default function Greeting() {
           </div>
           <div className="greeting-image-div">
             <img
-    alt="Sparsha"
-    src={require("../../assets/images/sparsha.jpg")}
-    className="my-image"
-  />
-</div>
+              alt="Sparsha"
+              src={require("../../assets/images/sparsha.jpg")}
+              className="my-image"
+            />
+          </div>
         </div>
       </div>
     </Fade>

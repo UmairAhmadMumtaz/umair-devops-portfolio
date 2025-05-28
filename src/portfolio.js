@@ -45,12 +45,15 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "Curious Full Stack Developer always exploring new tech, whether it’s Python, React, or the next big stack.",
+  subTitle:
+    "Curious Full Stack Developer always exploring new tech, whether it’s Python, React, or the next big stack.",
   skills: [
     emoji(
       "⚡ Build full-stack web applications using React, Node.js, Flask, and FastAPI"
     ),
-    emoji("⚡ Design scalable APIs and serverless systems on AWS and Google Cloud"),
+    emoji(
+      "⚡ Design scalable APIs and serverless systems on AWS and Google Cloud"
+    ),
     emoji(
       "⚡ Integrate AI/ML models, databases, and third-party APIs for real-time apps"
     )
@@ -192,7 +195,8 @@ const bigProjects = {
   projects: [
     {
       projectName: "Eventique, an AI-Based Event Planning Application",
-      projectDesc: "A serverless event planning platform built with FastAPI, React, and Google Cloud; optimized for real-time interaction, high uptime, and low infrastructure cost.",
+      projectDesc:
+        "A serverless event planning platform built with FastAPI, React, and Google Cloud; optimized for real-time interaction, high uptime, and low infrastructure cost.",
       footerLink: [
         {
           name: "Github Link",
@@ -203,7 +207,8 @@ const bigProjects = {
     },
     {
       projectName: "Fraud Folio – AI-Driven Real-Time Fraud Detection System",
-      projectDesc: "An AI-powered fraud detection system using LLAMA 3.2 and Flask-React stack, delivering 93% precision with real-time monitoring and explainable insights.",
+      projectDesc:
+        "An AI-powered fraud detection system using LLAMA 3.2 and Flask-React stack, delivering 93% precision with real-time monitoring and explainable insights.",
       footerLink: [
         {
           name: "Github Link",
@@ -213,7 +218,8 @@ const bigProjects = {
     },
     {
       projectName: "Real-Time Stock Forecasting & Visualization Platform",
-      projectDesc: "A real-time stock forecasting tool built with Streamlit and Facebook Prophet, offering accurate predictions and interactive visualizations with Plotly.",
+      projectDesc:
+        "A real-time stock forecasting tool built with Streamlit and Facebook Prophet, offering accurate predictions and interactive visualizations with Plotly.",
       footerLink: [
         {
           name: "Github Link",

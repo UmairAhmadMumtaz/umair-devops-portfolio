@@ -36,6 +36,10 @@ input {
   transition: 0.4s;
 }
 
+.slider:hover {
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.25);
+}
+
 input:checked + .slider {
   background-color: $toggleCheck;
 }

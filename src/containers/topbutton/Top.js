@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, {useEffect, useRef} from "react";
 import "./Top.scss";
 
 export default function Top() {
@@ -16,8 +16,7 @@ export default function Top() {
       }
 
       scrollTimeout.current = setTimeout(() => {
-        const scrollTop =
-          window.scrollY || document.documentElement.scrollTop;
+        const scrollTop = window.scrollY || document.documentElement.scrollTop;
 
         if (scrollTop > 20 && buttonRef.current) {
           buttonRef.current.classList.add("visible");
@@ -34,16 +33,11 @@ export default function Top() {
   }, []);
 
   function TopEvent() {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({top: 0, behavior: "smooth"});
   }
 
   return (
-    <button
-      onClick={TopEvent}
-      id="topButton"
-      ref={buttonRef}
-      title="Go to top"
-    >
+    <button onClick={TopEvent} id="topButton" ref={buttonRef} title="Go to top">
       <i className="fas fa-hand-point-up" aria-hidden="true"></i>
     </button>
   );

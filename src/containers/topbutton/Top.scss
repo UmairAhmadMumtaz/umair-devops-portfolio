@@ -1,7 +1,9 @@
 @import "../../_globalColor";
 
 #topButton {
-  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
   position: fixed;
   bottom: 20px;
   right: 30px;
@@ -14,6 +16,11 @@
   padding: 15px;
   border-radius: 15px;
   font-size: 25px;
+}
+
+#topButton.visible {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 #topButton:hover {

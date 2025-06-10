@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, {useRef, useEffect, useState} from "react";
 import "./Progress.scss";
 import {illustration, techStack} from "../../portfolio";
 import {Fade} from "react-reveal";
@@ -10,24 +10,21 @@ function useInView(options) {
   const [inView, setInView] = useState(false);
 
   useEffect(() => {
-    const observer = new window.IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setInView(true);
-          observer.disconnect();
-        }
-      },
-      options
-    );
+    const observer = new window.IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        setInView(true);
+        observer.disconnect();
+      }
+    }, options);
     if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();
   }, [options]);
 
-  return [ref, inView]
+  return [ref, inView];
 }
 
-function SkillBar({ exp }) {
-  const [ref, inView] = useInView({ threshold: 0.3 });
+function SkillBar({exp}) {
+  const [ref, inView] = useInView({threshold: 0.3});
   const progressStyle = {
     width: inView ? exp.progressPercentage : 0,
     opacity: inView ? 1 : 0

@@ -20,10 +20,10 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Ziyue Zhu",
+  title: "Hi！ I'm Ziyue",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "Results-driven marketing specialist passionate about crafting strategies that connect, engage, and convert. Skilled in SEO, social media, and data-led campaigns. 📊💡"
   ),
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
@@ -49,15 +49,13 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "Marketing strategies built on insight, creativity, and data 📈",
   skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
+    emoji("⚡ SEO strategy, keyword research, and on-page optimization"),
+    emoji("⚡ Social media content planning and cross-platform management"),
+    emoji("⚡ Email marketing (Mailchimp), newsletter design & A/B testing"),
+    emoji("⚡ Google Analytics & Search Console for campaign evaluation"),
+    emoji("⚡ Content creation using Canva, Notion, and AI tools")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -65,56 +63,32 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
+      skillName: "Google Analytics",
+      fontAwesomeClassname: "fas fa-chart-line"
     },
     {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
+      skillName: "Google Sheets",
+      fontAwesomeClassname: "fas fa-table"
     },
     {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
+      skillName: "Figma",
+      fontAwesomeClassname: "fas fa-pencil-ruler"
     },
     {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
+      skillName: "Salesforce",
+      fontAwesomeClassname: "fas fa-cloud"
     },
     {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
+      skillName: "Mailchimp",
+      fontAwesomeClassname: "fas fa-envelope"
     },
     {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
+      skillName: "Instagram",
+      fontAwesomeClassname: "fab fa-instagram"
     },
     {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
+      skillName: "Canva",
+      fontAwesomeClassname: "fas fa-paint-brush"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -126,10 +100,10 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
+      schoolName: "Boston University",
       logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
+      subHeader: "Master of Science in Journalism",
+      duration: "September 2023 - May 2025",
       desc: "Participated in the research of XXX and published 3 papers.",
       descBullets: [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
@@ -137,10 +111,10 @@ const educationInfo = {
       ]
     },
     {
-      schoolName: "Stanford University",
+      schoolName: "University of Nottingham",
       logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
+      subHeader: "Bachelor of Arts with Honours in International Studies",
+      duration: "September 2019 - April 2023",
       desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
       descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     }
@@ -174,29 +148,38 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
+      role: "Marketing Manager",
+      company: "Modex",
       companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      date: "Sep 2020 – June 2023",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Collaborated with model and operation teams to develop and execute multi-channel marketing strategies, managing project lifecycles from initial planning through performance optimization",
+        "Coordinated partnership initiatives with major brands (Peacebird, Boy London), managing relationship development, contract negotiations, and collaborative promotional activities to increase market visibility",
+        "Supervised creation of 30+ marketing materials and brand communications, ensuring consistency with brand standards while achieving 20M+ cumulative reach and 640K+ engagements",
+        "Monitored campaign effectiveness through analytics platforms, preparing comprehensive performance reports for leadership and adjusting strategies based on market response data"
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
+      role: "Event Coordinator",
+      company: "Nottingham Alumni Association",
       companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      date: "Sep 2020 – June 2022",
+      descBullets: [
+        "Coordinated large-scale events including Alumni Homecoming and Alumni Wedding from concept to completion, managing logistics, vendor coordination, and attendee experience for 1000+ participants",
+        "Secured corporate sponsorships generating 4000+ RMB in event funding, negotiated vendor contracts, and established partnerships with local businesses for exclusive alumni discount programs",
+        "Facilitated cross-department communication and collaboration with university administration, students, alumni network, and PR teams to ensure seamless event execution"
+      ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
+      role: "Digital Marketing Intern",
+      company: "Ruder Finn",
       companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      date: "June 2021 – Sep 2021",
+      descBullets: [
+        "Coordinated marketing proposal development for high-profile client engagements including China International Import Expo, supporting account teams with research and presentation preparation",
+        "Conducted comprehensive competitive analysis and market research projects, collaborating with senior strategists to develop client positioning strategies and campaign recommendations",
+        "Assisted with project management tasks including content calendar coordination and campaign execution support, maintaining client communication records and preparing presentation materials"
+      ]
     }
   ]
 };
@@ -212,30 +195,19 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Project",
+  subtitle: "A weekly newsletter by myself",
   projects: [
     {
       image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectName: "Pink World",
+      projectDesc: "A weekly newsletter focus on women empowerment",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://saayahealth.com/"
+          url: "https://mailchi.mp/752dcc397dbe/pink-world"
         }
         //  you can add extra buttons here.
-      ]
-    },
-    {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://nextu.se/"
-        }
       ]
     }
   ],
@@ -252,7 +224,7 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "Google Ana",
       subtitle:
         "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
       image: require("./assets/images/codeInLogo.webp"),
@@ -386,22 +358,22 @@ const twitterDetails = {
 const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
-  illustration,
+  achievementSection,
+  bigProjects,
+  blogSection,
+  contactInfo,
+  educationInfo,
   greeting,
+  illustration,
+  isHireable,
+  openSource,
+  podcastSection,
+  resumeSection,
+  skillsSection,
   socialMediaLinks,
   splashScreen,
-  skillsSection,
-  educationInfo,
-  techStack,
-  workExperiences,
-  openSource,
-  bigProjects,
-  achievementSection,
-  blogSection,
   talkSection,
-  podcastSection,
-  contactInfo,
+  techStack,
   twitterDetails,
-  isHireable,
-  resumeSection
+  workExperiences
 };

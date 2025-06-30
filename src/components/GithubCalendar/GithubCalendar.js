@@ -1,8 +1,8 @@
-import React from 'react';
-import GitHubCalendar from 'react-github-calendar';
-import './GithubCalendar.scss';
+import React from "react";
+import GitHubCalendar from "react-github-calendar";
+import "./GithubCalendar.scss";
 
-const GithubCalendar = ({ isDark }) => {
+const GithubCalendar = ({isDark}) => {
   const purpleTheme = {
     level0: "#2c2c3d",
     level1: "#7737c4",
@@ -17,7 +17,12 @@ const GithubCalendar = ({ isDark }) => {
         isDark ? "dark-github" : "light-github"
       }`}
     >
-      <h2 className="github-activity-heading" aria-label="GitHub Activity Section">GitHub Activity</h2>
+      <h2
+        className="github-activity-heading"
+        aria-label="GitHub Activity Section"
+      >
+        GitHub Activity
+      </h2>
       <GitHubCalendar
         username="your-github-username"
         theme={purpleTheme}

@@ -23,7 +23,7 @@ const greeting = {
   username: "Umair Ahmad",
   title: "Hi all, I'm Umair",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "An experienced DevOps Engineer 🚀 specializing in AWS cloud services, Terraform IaC, Kubernetes orchestration, and Jenkins/GitHub Actions CI/CD pipelines. Proven track record in automating deployments and optimizing cloud infrastructure for scalability and cost efficiency."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button

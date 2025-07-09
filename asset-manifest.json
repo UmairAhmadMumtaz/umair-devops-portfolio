@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/umair-devops-portfolio/static/css/main.55ab2153.css",
-    "main.js": "/umair-devops-portfolio/static/js/main.9705018e.js",
+    "main.js": "/umair-devops-portfolio/static/js/main.caaaa506.js",
     "static/css/64.bba8fa55.chunk.css": "/umair-devops-portfolio/static/css/64.bba8fa55.chunk.css",
     "static/js/64.56dc6704.chunk.js": "/umair-devops-portfolio/static/js/64.56dc6704.chunk.js",
     "static/css/769.b3cbb36b.chunk.css": "/umair-devops-portfolio/static/css/769.b3cbb36b.chunk.css",
@@ -19,14 +19,13 @@
     "static/media/facebookLogo.png": "/umair-devops-portfolio/static/media/facebookLogo.f46d68b24e9b4f73ee8b.png",
     "static/media/codeInLogo.webp": "/umair-devops-portfolio/static/media/codeInLogo.e41a71d512efeda2a55c.webp",
     "static/media/skill.svg": "/umair-devops-portfolio/static/media/skill.35a147662ab0a1d15e579690446e0258.svg",
-    "static/media/resume.pdf": "/umair-devops-portfolio/static/media/resume.f0f733dd3cd732b39262.pdf",
     "static/media/pwaLogo.webp": "/umair-devops-portfolio/static/media/pwaLogo.8bf2293da0ca66249e37.webp",
     "static/media/saayaHealthLogo.webp": "/umair-devops-portfolio/static/media/saayaHealthLogo.60b27d1f184fadfce43a.webp",
     "static/media/nextuLogo.webp": "/umair-devops-portfolio/static/media/nextuLogo.e033dbfa4c58c0a906aa.webp",
     "index.html": "/umair-devops-portfolio/index.html",
     "static/media/talksCardBack.svg": "/umair-devops-portfolio/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
     "main.55ab2153.css.map": "/umair-devops-portfolio/static/css/main.55ab2153.css.map",
-    "main.9705018e.js.map": "/umair-devops-portfolio/static/js/main.9705018e.js.map",
+    "main.caaaa506.js.map": "/umair-devops-portfolio/static/js/main.caaaa506.js.map",
     "64.bba8fa55.chunk.css.map": "/umair-devops-portfolio/static/css/64.bba8fa55.chunk.css.map",
     "64.56dc6704.chunk.js.map": "/umair-devops-portfolio/static/js/64.56dc6704.chunk.js.map",
     "769.b3cbb36b.chunk.css.map": "/umair-devops-portfolio/static/css/769.b3cbb36b.chunk.css.map",
@@ -34,6 +33,6 @@
   },
   "entrypoints": [
     "static/css/main.55ab2153.css",
-    "static/js/main.9705018e.js"
+    "static/js/main.caaaa506.js"
   ]
 }

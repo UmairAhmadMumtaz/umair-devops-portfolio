@@ -23,7 +23,7 @@ const greeting = {
   username: "Umair Ahmad",
   title: "Hi all, I'm Umair",
   subTitle: emoji(
-    "An experienced DevOps Engineer 🚀 specializing in AWS cloud services, Terraform IaC, Kubernetes orchestration, and Jenkins/GitHub Actions CI/CD pipelines. Proven track record in automating deployments and optimizing cloud infrastructure for scalability and cost efficiency."
+    "An experienced DevOps Engineer 🚀 specialized in AWS cloud services, Terraform IaC, Kubernetes orchestration, and Jenkins/GitHub Actions CI/CD pipelines. Proven track record in automating deployments and optimizing cloud infrastructure for scalability and cost efficiency."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1pOSwshfiq2oG4dLkRMr_yRvsA1ozSMr5/view?usp=sharing", // Set to empty to hide the button
@@ -372,7 +372,7 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
+  number: "+92-3154995037",
   email_address: "umairahmadmumtaz@gmail.com"
 };
 

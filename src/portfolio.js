@@ -21,7 +21,7 @@ const illustration = {
 
 const greeting = {
   username: "Umair Ahmad",
-  title: "Hi all, I'm Umair",
+  title: "Hi there, I'm Umair",
   subTitle: emoji(
     "An experienced DevOps Engineer 🚀 specialized in AWS cloud services, Terraform IaC, Kubernetes orchestration, and Jenkins/GitHub Actions CI/CD pipelines. Proven track record in automating deployments and optimizing cloud infrastructure for scalability and cost efficiency."
   ),

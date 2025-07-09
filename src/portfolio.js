@@ -38,7 +38,7 @@ const socialMediaLinks = {
   gmail: "umairahmadmumtaz@gmail.com",
   gitlab: "https://gitlab.com/umairahmad11",
   //facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@umairahmadmumtaz",
+  medium: "https://medium.com/@saadpasta",
   stackoverflow: "https://stackoverflow.com/users/20995018/umair-ahmad-mumtaz",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia

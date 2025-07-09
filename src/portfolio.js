@@ -25,8 +25,7 @@ const greeting = {
   subTitle: emoji(
     "An experienced DevOps Engineer 🚀 specializing in AWS cloud services, Terraform IaC, Kubernetes orchestration, and Jenkins/GitHub Actions CI/CD pipelines. Proven track record in automating deployments and optimizing cloud infrastructure for scalability and cost efficiency."
   ),
-  resumeLink:
-    "https://drive.google.com/file/d/1pOSwshfiq2oG4dLkRMr_yRvsA1ozSMr5/view?usp=sharing", // Set to empty to hide the button
+  resumeLink: "https://drive.google.com/file/d/1pOSwshfiq2oG4dLkRMr_yRvsA1ozSMr5/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 

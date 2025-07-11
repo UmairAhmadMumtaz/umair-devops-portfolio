@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/umair-devops-portfolio/static/css/main.55ab2153.css",
-    "main.js": "/umair-devops-portfolio/static/js/main.4f8e14e3.js",
+    "main.js": "/umair-devops-portfolio/static/js/main.5c2967fb.js",
     "static/css/64.bba8fa55.chunk.css": "/umair-devops-portfolio/static/css/64.bba8fa55.chunk.css",
     "static/js/64.56dc6704.chunk.js": "/umair-devops-portfolio/static/js/64.56dc6704.chunk.js",
     "static/css/769.b3cbb36b.chunk.css": "/umair-devops-portfolio/static/css/769.b3cbb36b.chunk.css",
@@ -10,13 +10,13 @@
     "static/media/harvardLogo.png": "/umair-devops-portfolio/static/media/harvardLogo.542dab89bfb35b7f5c0d.png",
     "static/media/Montserrat-Regular.ttf": "/umair-devops-portfolio/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
     "static/media/Agustina.woff": "/umair-devops-portfolio/static/media/Agustina.eb0c59dda4cc308cba96.woff",
-    "static/media/cloudvisorLogo.png": "/umair-devops-portfolio/static/media/cloudvisorLogo.cd8d82b15a15d98a9f8c.png",
     "static/media/manOnTable.svg": "/umair-devops-portfolio/static/media/manOnTable.8f117eb207e57ed8f89d67d595aceb45.svg",
+    "static/media/cloudvisorLogo.png": "/umair-devops-portfolio/static/media/cloudvisorLogo.26aab3f95fbc72b98be9.png",
     "static/media/systemsLimitedLogo.png": "/umair-devops-portfolio/static/media/systemsLimitedLogo.fbaf352fd116ef47d576.png",
     "static/media/contactMailDark.svg": "/umair-devops-portfolio/static/media/contactMailDark.1db650d351729a0f17b4e3104e6a7b7a.svg",
     "static/media/developerActivity.svg": "/umair-devops-portfolio/static/media/developerActivity.2c0445cae86f4243433a2f5a22b2c031.svg",
     "static/media/googleAssistantLogo.webp": "/umair-devops-portfolio/static/media/googleAssistantLogo.f720c71652579588524a.webp",
-    "static/media/airbnbLogo.png": "/umair-devops-portfolio/static/media/airbnbLogo.e8497507db673acd3991.png",
+    "static/media/gosaasLabsLogo.png": "/umair-devops-portfolio/static/media/gosaasLabsLogo.d0fdfd18a71ea183712b.png",
     "static/media/codeInLogo.webp": "/umair-devops-portfolio/static/media/codeInLogo.e41a71d512efeda2a55c.webp",
     "static/media/skill.svg": "/umair-devops-portfolio/static/media/skill.35a147662ab0a1d15e579690446e0258.svg",
     "static/media/pwaLogo.webp": "/umair-devops-portfolio/static/media/pwaLogo.8bf2293da0ca66249e37.webp",
@@ -25,7 +25,7 @@
     "index.html": "/umair-devops-portfolio/index.html",
     "static/media/talksCardBack.svg": "/umair-devops-portfolio/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
     "main.55ab2153.css.map": "/umair-devops-portfolio/static/css/main.55ab2153.css.map",
-    "main.4f8e14e3.js.map": "/umair-devops-portfolio/static/js/main.4f8e14e3.js.map",
+    "main.5c2967fb.js.map": "/umair-devops-portfolio/static/js/main.5c2967fb.js.map",
     "64.bba8fa55.chunk.css.map": "/umair-devops-portfolio/static/css/64.bba8fa55.chunk.css.map",
     "64.56dc6704.chunk.js.map": "/umair-devops-portfolio/static/js/64.56dc6704.chunk.js.map",
     "769.b3cbb36b.chunk.css.map": "/umair-devops-portfolio/static/css/769.b3cbb36b.chunk.css.map",
@@ -33,6 +33,6 @@
   },
   "entrypoints": [
     "static/css/main.55ab2153.css",
-    "static/js/main.4f8e14e3.js"
+    "static/js/main.5c2967fb.js"
   ]
 }

@@ -194,7 +194,7 @@ const workExperiences = {
     {
       role: "Cloud Infrastructure Engineer",
       company: "GoSaaS Labs",
-      companylogo: require("./assets/images/airbnbLogo.png"),
+      companylogo: require("./assets/images/gosaasLabsLogo.png"),
       date: "July 2021 – Sep 2022",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     }

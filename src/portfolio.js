@@ -176,7 +176,7 @@ const workExperiences = {
     {
       role: "Devops Engineer",
       company: "Cloudvisor",
-      companylogo: require("./assets/images/cloudvisorLogo.jpg"),
+      companylogo: require("./assets/images/cloudvisorLogo.png"),
       date: "April 2025 – Present",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       descBullets: [

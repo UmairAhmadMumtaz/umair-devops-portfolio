@@ -171,17 +171,21 @@ const techStack = {
 // Work experience section
 
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+  display: true,
   experience: [
     {
       role: "Devops Engineer",
       company: "Cloudvisor",
       companylogo: require("./assets/images/cloudvisorLogo.png"),
       date: "April 2025 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      desc: "Leading cloud infrastructure automation and DevOps practices to streamline deployment processes and enhance system reliability across multiple client environments.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Utilizing Terraform for infrastructure provisioning, adopting Infrastructure as Code (IaC) principles",
+        "Establishing robust CI/CD pipelines through AWS CodePipeline and Jenkins",
+        "Implementing automation solutions with Python and Bash scripting",
+        "Monitoring system health and performance through AWS CloudWatch and Zabbix",
+        "Proficiently managing databases and executing data manipulation tasks",
+        "Proactively troubleshooting issues and optimizing resource allocation for cost efficiency"
       ]
     },
     {
@@ -189,14 +193,30 @@ const workExperiences = {
       company: "Systems Limited",
       companylogo: require("./assets/images/systemsLimitedLogo.png"),
       date: "Sept 2022 – April 2025",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      desc: "Orchestrating enterprise-level AWS applications and implementing comprehensive CI/CD solutions while achieving recognition as Employee of the Quarter Q2 2023.",
+      descBullets: [
+        "Orchestrating enterprise applications on AWS using S3, CloudFront, ECS, ECR, RDS, and Lambda services",
+        "Developing CI/CD pipelines leveraging GitHub Actions and Jenkins for automated deployment orchestration",
+        "Streamlining operational efficiency by automating repetitive tasks through Jenkins job implementations",
+        "Establishing Grafana alerts for AWS infrastructure monitoring with seamless Slack integration",
+        "Overseeing production deployments and releases using Jenkins and GitHub Actions workflows",
+        "Achieved Employee of the Quarter Q2 2023 and Employee of the Month January 2023"
+      ]
     },
     {
       role: "Cloud Infrastructure Engineer",
       company: "GoSaaS Labs",
       companylogo: require("./assets/images/gosaasLabsLogo.png"),
       date: "July 2021 – Sep 2022",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      desc: "Providing strategic project supervision and designing resilient AWS architectures while facilitating cloud migrations and implementing comprehensive security standards.",
+      descBullets: [
+        "Providing strategic supervision for cloud migration projects and infrastructure modernization initiatives",
+        "Collaborating in design and implementation of highly available and resilient AWS architectures",
+        "Facilitating application migrations from private cloud infrastructures to AWS Cloud environments",
+        "Enforcing AWS and CIS security standards to safeguard cloud environments from threats",
+        "Implementing application-level security using AWS Inspector and automated patching processes",
+        "Educating employees on security best practices to mitigate potential cyber security threats"
+      ]
     }
   ]
 };

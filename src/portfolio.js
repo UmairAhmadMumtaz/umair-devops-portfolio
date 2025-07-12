@@ -49,15 +49,25 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "EXPERIENCED DEVOPS ENGINEER WHO STREAMLINES INFRASTRUCTURE AND AUTOMATES CLOUD OPERATIONS",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Design and implement scalable cloud infrastructure on AWS using Infrastructure as Code (IaC) principles"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    emoji("⚡ Build robust CI/CD pipelines with Jenkins, GitHub Actions, and AWS CodePipeline for seamless deployment automation"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ Orchestrate containerized applications using Docker and Kubernetes for high availability and scalability"
+    ),
+        emoji(
+      "⚡ Implement comprehensive monitoring solutions with CloudWatch, Grafana, and Zabbix for proactive system management"
+    ),
+        emoji(
+      "⚡ Automate security compliance and patch management across cloud environments following AWS and CIS standards"
+    ),
+        emoji(
+      "⚡ Optimize cloud costs and performance through strategic resource allocation and infrastructure right-sizing"
     )
+
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon

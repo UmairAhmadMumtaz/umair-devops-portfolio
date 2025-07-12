@@ -49,25 +49,27 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "EXPERIENCED DEVOPS ENGINEER WHO STREAMLINES INFRASTRUCTURE AND AUTOMATES CLOUD OPERATIONS",
+  subTitle:
+    "EXPERIENCED DEVOPS ENGINEER WHO STREAMLINES INFRASTRUCTURE AND AUTOMATES CLOUD OPERATIONS",
   skills: [
     emoji(
       "⚡ Design and implement scalable cloud infrastructure on AWS using Infrastructure as Code (IaC) principles"
     ),
-    emoji("⚡ Build robust CI/CD pipelines with Jenkins, GitHub Actions, and AWS CodePipeline for seamless deployment automation"),
+    emoji(
+      "⚡ Build robust CI/CD pipelines with Jenkins, GitHub Actions, and AWS CodePipeline for seamless deployment automation"
+    ),
     emoji(
       "⚡ Orchestrate containerized applications using Docker and Kubernetes for high availability and scalability"
     ),
-        emoji(
+    emoji(
       "⚡ Implement comprehensive monitoring solutions with CloudWatch, Grafana, and Zabbix for proactive system management"
     ),
-        emoji(
+    emoji(
       "⚡ Automate security compliance and patch management across cloud environments following AWS and CIS standards"
     ),
-        emoji(
+    emoji(
       "⚡ Optimize cloud costs and performance through strategic resource allocation and infrastructure right-sizing"
     )
-
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon

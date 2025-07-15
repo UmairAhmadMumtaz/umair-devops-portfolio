@@ -127,6 +127,18 @@ export default function socialMedia() {
           <span></span>
         </a>
       ) : null}
+
+      {socialMediaLinks.credly ? (
+        <a
+          href={socialMediaLinks.credly}
+          className="icon-button credly"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fas fa-certificate"></i>
+          <span></span>
+        </a>
+      ) : null}
     </div>
   );
 }

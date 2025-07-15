@@ -135,7 +135,7 @@ export default function socialMedia() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="fas fa-certificate"></i>
+          <i className="fas fa-award"></i>
           <span></span>
         </a>
       ) : null}

@@ -38,7 +38,7 @@ const socialMediaLinks = {
   gmail: "umairahmadmumtaz@gmail.com",
   gitlab: "https://gitlab.com/umairahmad11",
   //facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
+  medium: "https://medium.com/@umairahmadmumtaz",
   stackoverflow: "https://stackoverflow.com/users/20995018/umair-ahmad-mumtaz",
   credly: "https://www.credly.com/users/umair-ahmad-mumtaz",
   // Instagram, Twitter and Kaggle are also supported in the links!
@@ -369,7 +369,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Talks Sections

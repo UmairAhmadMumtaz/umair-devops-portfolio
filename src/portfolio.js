@@ -358,10 +358,11 @@ const blogSection = {
   blogs: [
     {
       url: "https://medium.com/@umairahmadmumtaz/6a7a3f3c9cf4",
-      title: "Secure AWS Deployments with GitHub Actions: Using IAM Roles Instead of Access Keys",
+      title:
+        "Secure AWS Deployments with GitHub Actions: Using IAM Roles Instead of Access Keys",
       description:
         "AWS Access Keys in GitHub Actions is a Security Risk. If you’re using GitHub Actions to deploy to AWS, you’ve probably stored your AWS credentials like this: OpenID Connect (OIDC) is like a secure…"
-    },
+    }
     // {
     //   url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
     //   title: "Why REACT is The Best?",

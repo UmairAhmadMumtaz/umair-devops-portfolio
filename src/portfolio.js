@@ -297,23 +297,15 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "HashiCorp Certified: Terraform",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+        "Validates expertise in Infrastructure as Code (IaC) using Terraform for automated cloud infrastructure provisioning and management. Covers Terraform fundamentals, configuration management, state handling, modules, and collaborative workflows across multi-cloud environments.RetryClaude can make mistakes. Please double-check responses.",
+      image: require("./assets/images/terraformBadge.png"),
+      imageAlt: "Terraform Certificate",
       footerLink: [
         {
           name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+          url: "https://drive.google.com/file/d/18IT4wTK3s8bhPcOasUA6iRvXEpt8Tirr/view?usp=sharing"
         }
       ]
     },

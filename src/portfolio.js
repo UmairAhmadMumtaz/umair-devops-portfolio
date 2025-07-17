@@ -299,40 +299,39 @@ const achievementSection = {
     {
       title: "HashiCorp Certified: Terraform",
       subtitle:
-        "Validates expertise in Infrastructure as Code (IaC) using Terraform for automated cloud infrastructure provisioning and management. Covers Terraform fundamentals, configuration management, state handling, modules, and collaborative workflows across multi-cloud environments.RetryClaude can make mistakes. Please double-check responses.",
+        "Validates expertise in Infrastructure as Code (IaC) using Terraform for automated cloud infrastructure provisioning and management. Covers Terraform fundamentals, configuration management, state handling, modules, and collaborative workflows across multi-cloud environments.",
       image: require("./assets/images/terraformBadge.png"),
       imageAlt: "Terraform Certificate",
       footerLink: [
         {
-          name: "Certification",
+          name: "View Certificate",
           url: "https://drive.google.com/file/d/18IT4wTK3s8bhPcOasUA6iRvXEpt8Tirr/view?usp=sharing"
         }
       ]
     },
     {
-      title: "Google Assistant Action",
+      title: "AWS Certified Solutions Architect",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
+        "Validates expertise in designing scalable, secure, and cost-effective cloud architectures on AWS. Covers core AWS services, security best practices, high availability design, performance optimization, and migration strategies following AWS Well-Architected Framework principles.",
+      image: require("./assets/images/awsCertifiedSolutionsArchitectAssociateBadge.png"),
+      imageAlt: "AWS Certified Solutions Architect Associate Badge",
       footerLink: [
         {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+          name: "View Certificate",
+          url: "https://drive.google.com/file/d/1waK3lRqGKY4NeEffIRRqDAVTZ3dB6rdp/view?usp=sharing"
         }
       ]
     },
-
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
+      title: "AWS Certified SysOps Administrator",
+      subtitle:
+        "Validates expertise in deploying, managing, and operating scalable systems on AWS. Covers monitoring and logging, automation and optimization, security and compliance, networking and content delivery, backup and disaster recovery, and troubleshooting operational issues following AWS operational best practices.",
+      image: require("./assets/images/awsCertifiedSysopsAdministratorAssociate.png"),
+      imageAlt: "AWS Certified Solutions SysOps Administrator Badge",
       footerLink: [
-        {name: "Certification", url: ""},
         {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
+          name: "View Certificate",
+          url: "https://drive.google.com/file/d/1hGdGlV5EvbQ1dNzoCUxU66TZClvAQkhf/view?usp=sharing"
         }
       ]
     }

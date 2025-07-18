@@ -139,6 +139,18 @@ export default function socialMedia() {
           <span></span>
         </a>
       ) : null}
+
+      {socialMediaLinks.dockerhub ? (
+        <a
+          href={socialMediaLinks.dockerhub}
+          className="icon-button dockerhub"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fab fa-docker"></i>
+          <span></span>
+        </a>
+      ) : null}
     </div>
   );
 }

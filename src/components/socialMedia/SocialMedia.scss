@@ -72,12 +72,8 @@
   background-color: $credly;
 }
 
-.icon-button.dockerhub {
+.dockerhub i {
   background-color: $dockerhub;
-
-  &:hover {
-    background-color: darken($dockerhub, 10%);
-  }
 }
 
 /* Hover Transition */

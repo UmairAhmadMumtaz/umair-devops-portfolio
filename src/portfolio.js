@@ -335,6 +335,19 @@ const achievementSection = {
           url: "https://drive.google.com/file/d/1hGdGlV5EvbQ1dNzoCUxU66TZClvAQkhf/view?usp=sharing"
         }
       ]
+    },
+    {
+      title: "AWS Certified Cloud Practitioner",
+      subtitle:
+        "Validates foundational knowledge of AWS cloud services, core concepts, security fundamentals, and pricing models. Demonstrates understanding of cloud computing benefits, basic AWS architecture, and essential services for building and deploying applications in the AWS Cloud environment.",
+      image: require("./assets/images/awsCertifiedCloudPractitioner.png"),
+      imageAlt: "AWS Certified Cloud Practitioner Badge",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url: "https://drive.google.com/file/d/1HMJf9ywFzw5HwK-eIxttX8hhhJr_4c2u/view?usp=sharing"
+        }
+      ]
     }
   ],
   display: true // Set false to hide this section, defaults to true

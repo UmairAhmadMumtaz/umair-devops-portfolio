@@ -324,6 +324,19 @@ const achievementSection = {
       ]
     },
     {
+      title: "AWS Certified Developer",
+      subtitle:
+        "Validates expertise in developing, deploying, and debugging cloud applications on AWS. Covers serverless computing, containerization, API development, database integration, monitoring, and CI/CD pipelines using core AWS developer services and best practices.",
+      image: require("./assets/images/awsCertifiedDeveloperAssociateBadge.png"),
+      imageAlt: "AWS Certified Developer Associate Badge",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url: "https://drive.google.com/file/d/10pOAzV7g0N5gJ068eKlUoAkE0ZwoY7ko/view?usp=sharing"
+        }
+      ]
+    },
+    {
       title: "AWS Certified SysOps Administrator",
       subtitle:
         "Validates expertise in deploying, managing, and operating scalable systems on AWS. Covers monitoring and logging, automation and optimization, security and compliance, networking and content delivery, backup and disaster recovery, and troubleshooting operational issues following AWS operational best practices.",

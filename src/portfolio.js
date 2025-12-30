@@ -298,6 +298,19 @@ const achievementSection = {
 
   achievementsCards: [
     {
+      title: "AWS Certified Devops Engineer",
+      subtitle:
+        "Validates professional-level expertise in AWS DevOps practices, including CI/CD pipelines, infrastructure automation, monitoring and logging, security, and high-availability cloud operations.",
+      image: require("./assets/images/awsCertifiedDevopsEngineerBadge.png"),
+      imageAlt: "AWS Devops Engineer Professional Certificate",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url: "https://drive.google.com/file/d/1v73cvAKK4ADyPyT0CMlcdKoHhDW1yP3F/view?usp=sharing"
+        }
+      ]
+    },
+    {
       title: "HashiCorp Certified: Terraform",
       subtitle:
         "Validates expertise in Infrastructure as Code (IaC) using Terraform for automated cloud infrastructure provisioning and management. Covers Terraform fundamentals, configuration management, state handling, modules, and collaborative workflows across multi-cloud environments.",

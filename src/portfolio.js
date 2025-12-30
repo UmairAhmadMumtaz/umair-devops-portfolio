@@ -300,7 +300,7 @@ const achievementSection = {
     {
       title: "AWS Certified Devops Engineer",
       subtitle:
-        "Validates professional-level expertise in AWS DevOps practices, including CI/CD pipelines, infrastructure automation, monitoring and logging, security, and high-availability cloud operations.",
+        "Validates professional-level expertise in implementing and managing DevOps practices on AWS. Covers CI/CD automation, infrastructure provisioning, monitoring and logging, security and compliance, and operational excellence across scalable AWS environments.",
       image: require("./assets/images/awsCertifiedDevopsEngineerBadge.png"),
       imageAlt: "AWS Devops Engineer Professional Certificate",
       footerLink: [

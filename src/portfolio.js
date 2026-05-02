@@ -374,6 +374,19 @@ const achievementSection = {
           url: "https://drive.google.com/file/d/1HMJf9ywFzw5HwK-eIxttX8hhhJr_4c2u/view?usp=sharing"
         }
       ]
+    },
+    {
+      title: "AWS Certified AI Practitioner",
+      subtitle:
+        "Validates foundational knowledge of artificial intelligence (AI), machine learning (ML), and generative AI concepts, including practical use cases on AWS. Demonstrates understanding of core AI/ML principles, responsible AI practices, and AWS AI services for building intelligent, data-driven applications.",
+      image: require("./assets/images/awsCertifiedAIPractitioner.png"),
+      imageAlt: "AWS Certified AI Practitioner Badge",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url: "https://drive.google.com/file/d/1dYrA6jNm4MH2_o5d_Z24RfmNSawOyy-q/view?usp=sharing"
+        }
+      ]
     }
   ],
   display: true // Set false to hide this section, defaults to true
